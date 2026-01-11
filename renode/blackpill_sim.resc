@@ -1,0 +1,17 @@
+using sysbus
+
+mach create "f4-sim"
+
+# Load a close STM32F4 board platform with USART2 exposed
+machine LoadPlatformDescription @platforms/boards/stm32f4_discovery.repl
+
+# Load the compiled ELF from this repo's build directory
+sysbus LoadELF @build/firmware.elf
+
+# Open a UART2 analyzer (USART2 is used at 115200 8N1)
+showAnalyzer sysbus.usart2
+
+# Optional: slow down if needed
+# emulation SetGlobalQuantum "0.00001"
+
+start

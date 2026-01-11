@@ -1,0 +1,40 @@
+# Build artifacts
+*.o
+*.a
+*.so
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.log
+
+# Build directories
+build/
+dist/
+obj/
+Debug/
+Release/
+
+# IDE and editor artifacts
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+*.old
+
+# Dependencies
+*.d
+
+# GDB and debugging
+gdb.ini
+.gdb_history
