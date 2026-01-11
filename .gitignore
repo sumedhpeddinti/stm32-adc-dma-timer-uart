@@ -16,6 +16,10 @@ obj/
 Debug/
 Release/
 
+# Exception: Include hardware and simulation build outputs
+!build_hardware/
+!build_simulation/
+
 # IDE and editor artifacts
 *.swp
 *.swo
